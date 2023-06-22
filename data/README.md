@@ -1,0 +1,6 @@
+## Description of Data
+
+The directory `cd-sco-starsem2012-st-original` contains the dataset used in *SEM2012 shared task ([Morante and Blanco, 2012](https://aclanthology.org/S12-1035/)). These data are publicly available at [the shared task website](https://www.clips.ua.ac.be/sem2012-st-neg/data.html).
+The syntactic information contained in these data was assigned using the reranking parser of [Charniak and Johnson (2005)](https://dl.acm.org/doi/10.3115/1219840.1219862).
+
+In our work, we parse the sentences in the dataset using Berkeley Neural Parser ([Kitaev and Klein, 2018](https://aclanthology.org/P18-1249/); [Kitaev et al., 2019](https://aclanthology.org/P19-1340/)) with BERT ([Devlin et al., 2019](https://aclanthology.org/N19-1423/)) and Attach Juxtapose Parser ([Yang and Deng, 2020](https://proceedings.neurips.cc/paper_files/paper/2020/file/f7177163c833dff4b38fc8d2872f1ec6-Paper.pdf)) with XLNet ([Yang et al, 2019](https://proceedings.neurips.cc/paper_files/paper/2019/file/dc6a7e655d7e5840e66733e9ee67cc69-Paper.pdf)). The syntactic information assigned using these parsers is stored in files inside `cd-sco-benepar` and `cd-sco-ajpar` directories, respectively, in the same format as the dataset of *SEM2012 shared task.
